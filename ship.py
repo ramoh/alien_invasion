@@ -1,4 +1,5 @@
-import pygame as pygame
+import pygame
+import pygame.image
 
 
 class Ship:
