@@ -1,5 +1,6 @@
 import sys
 import pygame
+import pygame.display
 from settings import Settings
 from ship import Ship
 
@@ -10,6 +11,7 @@ class AlienInvasion:
     def __init__(self):
         """Initialise the game, and create game resource"""
         pygame.init()
+
         self.settings = Settings()
 
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
@@ -30,6 +32,7 @@ class AlienInvasion:
         while True:
             self._check_events()
             self.ship.update()
+
             self._update_screen()
 
     def _check_events(self):

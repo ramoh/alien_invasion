@@ -130,3 +130,6 @@ dmypy.json
 
 # Ignore VS code settings
 .vscode/
+
+# Ignore Virtual envn 
+.venv/
