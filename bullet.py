@@ -21,7 +21,7 @@ class Bullet(Sprite):
         # Create a bullet rectangle at (0,0) and then set the correct positions.
         self.rect = pygame.Rect(
             0, 0, self.settings.bullet_width, self.settings.bullet_height)
-        self.rect.midbottom = ai_game.ship.rect.midbottom
+        self.rect.midbottom = ai_game.ship.rect.midtop
 
         # Store the bullet's position as a decimal value.
         self.y = float(self.rect.y)
